@@ -162,6 +162,20 @@ export const projects = [
     link: "https://github.com/iraklisKan/portfolio.git",
     liveLink: "https://irakliskan.github.io/portfolio/",
   },
+  {
+    id: 8,
+    title: "Tinder Clone - Full Stack Dating App",
+    des: "A full-stack dating application clone with real-time matching, user profiles, and swipe functionality. Built with MERN stack featuring secure authentication and responsive design.",
+    img: "/p4.svg",
+    iconLists: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    ],
+    link: "https://github.com/iraklisKan/tinder-clone",
+    liveLink: "https://tinder-clone-lq0q.onrender.com/",
+  },
 ];
 
 export const testimonials = [
