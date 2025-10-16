@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 // Dynamically import Lottie to avoid SSR issues
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
-import { cn } from "@/lib/utils";
+import { cn, getImagePath } from "@/lib/utils";
 
 
 import { BackgroundGradientAnimation } from "./GradientBg";
@@ -91,7 +91,7 @@ export const BentoGridItem = ({
         <div className="w-full h-full absolute">
           {img && (
             <img
-              src={img}
+              src={getImagePath(img)}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
             />
@@ -103,7 +103,7 @@ export const BentoGridItem = ({
         >
           {spareImg && (
             <img
-              src={spareImg}
+              src={getImagePath(spareImg)}
               alt={spareImg}
               //   width={220}
               className="object-cover object-center w-full h-full"
