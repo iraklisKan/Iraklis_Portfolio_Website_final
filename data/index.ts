@@ -248,14 +248,14 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Engineer - AEON Payment Technologies LTD",
-    desc: "October 2024 - Present | Developing payment solutions using Go (Golang), Docker, Kubernetes, Oracle/SQL, and PostgreSQL. Working on scalable microservices architecture and containerized applications.",
+    desc: "October 2025 - Present | Developing payment solutions using Go (Golang), Docker, Kubernetes, Oracle/SQL, and PostgreSQL. Working on scalable microservices architecture and containerized applications.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
     title: "Junior Full Stack Developer - eBOS Technologies",
-    desc: "March 2024 - September 2024 | Built web applications using C#, Microsoft SQL Server, HTML5, CSS3, and JavaScript. Developed full-stack solutions and RESTful APIs in Nicosia, Cyprus.",
+    desc: "March 2025 - September 2025 | Built web applications using C#, Microsoft SQL Server, HTML5, CSS3, and JavaScript. Developed full-stack solutions and RESTful APIs in Nicosia, Cyprus.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
