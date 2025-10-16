@@ -309,4 +309,25 @@ export const certifications = [
     status: "Completed",
     description: "Complete Python programming course from basics to advanced topics including Django and Flask frameworks.",
   },
+  {
+    id: 4,
+    title: "NestJS MasterClass - NodeJS Framework Backend Development",
+    provider: "Udemy",
+    status: "In Progress (March 2025 - Present)",
+    description: "Mastering NestJS framework for building scalable and maintainable backend applications with Node.js, including advanced concepts and best practices.",
+  },
+  {
+    id: 5,
+    title: "NodeJS Project Bootcamp 2025: Learn by Doing",
+    provider: "Udemy",
+    status: "In Progress (April 2025 - Present)",
+    description: "Hands-on Node.js bootcamp focusing on building real-world projects, mastering backend development, APIs, and server-side applications.",
+  },
+  {
+    id: 6,
+    title: "100 Hours of Web Development Bootcamp - Build 23 React Projects",
+    provider: "Udemy",
+    status: "In Progress (May 2025 - Present)",
+    description: "Comprehensive web development bootcamp building 23 React projects, covering modern React patterns, hooks, state management, and real-world applications.",
+  },
 ];
