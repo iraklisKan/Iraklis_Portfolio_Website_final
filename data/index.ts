@@ -148,6 +148,20 @@ export const projects = [
     link: "https://github.com/iraklisKan/Email-daily-news-with-Api-Python",
     liveLink: "#contact",
   },
+  {
+    id: 7,
+    title: "React.js Portfolio Website",
+    des: "Interactive portfolio website built with React.js, showcasing projects, skills, and experience with modern UI components and responsive design.",
+    img: "/p3.svg",
+    iconLists: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    ],
+    link: "https://github.com/iraklisKan/portfolio.git",
+    liveLink: "https://irakliskan.github.io/portfolio/",
+  },
 ];
 
 export const testimonials = [
