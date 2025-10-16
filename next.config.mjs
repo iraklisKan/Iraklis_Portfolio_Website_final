@@ -1,6 +1,14 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Iraklis_Portfolio_Website_final/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/Iraklis_Portfolio_Website_final' : '',
+};
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
