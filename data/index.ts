@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "Friends Management App",
     des: "A full-stack CRUD application built with Flask and React, featuring user authentication and RESTful API integration for managing friend connections.",
-    img: "/p1.svg",
+    img: "/friends.app.jpg",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
@@ -87,7 +87,7 @@ export const projects = [
     id: 2,
     title: "Python Real-Time Chat App",
     des: "Real-time chat application with Socket.IO integration, enabling instant messaging and live communication between users.",
-    img: "/p2.svg",
+    img: "/istockphoto-2231650075-1024x1024.jpg",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
@@ -100,7 +100,7 @@ export const projects = [
     id: 3,
     title: "MERN Stack Note-Taking App",
     des: "Full-stack note-taking application built with MongoDB, Express.js, React, and Node.js featuring user authentication and CRUD operations.",
-    img: "/p3.svg",
+    img: "/mern-notes.jpg",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
@@ -114,7 +114,7 @@ export const projects = [
     id: 4,
     title: "Python Web App ToDo List",
     des: "Interactive to-do list web application built with Python and Streamlit, featuring task management and user-friendly interface.",
-    img: "/p4.svg",
+    img: "/python-todo.jpg",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       "https://streamlit.io/images/brand/streamlit-mark-color.svg",
@@ -126,7 +126,7 @@ export const projects = [
     id: 5,
     title: "Django Application Form System",
     des: "Robust form handling system built with Django framework, implementing secure data validation and processing.",
-    img: "/p1.svg",
+    img: "/python-todo.jpg",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
@@ -139,7 +139,7 @@ export const projects = [
     id: 6,
     title: "Email Daily News API",
     des: "Automated email newsletter system with API integration for fetching and delivering daily news updates to subscribers.",
-    img: "/p2.svg",
+    img: "/email-api.jpg",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       "https://cdn.simpleicons.org/fastapi/009688",
@@ -152,7 +152,7 @@ export const projects = [
     id: 7,
     title: "React.js Portfolio Website",
     des: "Interactive portfolio website built with React.js, showcasing projects, skills, and experience with modern UI components and responsive design.",
-    img: "/p3.svg",
+    img: "/react-portfolio-jpg.jpg",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -166,7 +166,7 @@ export const projects = [
     id: 8,
     title: "Tinder Clone - Full Stack Dating App",
     des: "A full-stack dating application clone with real-time matching, user profiles, and swipe functionality. Built with MERN stack featuring secure authentication and responsive design.",
-    img: "/p4.svg",
+    img: "/tinder-app.jpg",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
