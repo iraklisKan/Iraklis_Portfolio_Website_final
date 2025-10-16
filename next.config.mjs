@@ -16,7 +16,10 @@ const nextConfig = {
     },
 };
 
-export default withSentryConfig(nextConfig, {
+// Only use Sentry if we have a valid auth token
+const shouldUseSentry = process.env.SENTRY_AUTH_TOKEN && process.env.SENTRY_AUTH_TOKEN !== 'dummy_token';
+
+export default shouldUseSentry ? withSentryConfig(nextConfig, {
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
 
@@ -51,4 +54,4 @@ export default withSentryConfig(nextConfig, {
     // https://docs.sentry.io/product/crons/
     // https://vercel.com/docs/cron-jobs
     automaticVercelMonitors: true,
-});
+}) : nextConfig;

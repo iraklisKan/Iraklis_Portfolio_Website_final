@@ -34,7 +34,7 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-          SENTRY_AUTH_TOKEN: dummy_token
+          DISABLE_SENTRY: true
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
