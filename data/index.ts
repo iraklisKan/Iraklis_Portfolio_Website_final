@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -247,31 +247,17 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Full Stack Web Developer - eBOS",
-    desc: "Currently working as a Full Stack Developer at eBOS in Nicosia, Cyprus. Building modern web applications using .NET, C#, HTML5, CSS3, and JavaScript.",
+    title: "Software Engineer - AEON Payment Technologies LTD",
+    desc: "Currently working as a Software Engineer at AEON Payment Technologies LTD. Developing payment solutions using Go (Golang), Docker, Kubernetes, Oracle/SQL, and PostgreSQL.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Bachelor's Degree - Applied Informatics",
-    desc: "Pursuing Bachelor's degree in Applied Informatics at University of Macedonia, Thessaloniki. Focus on Software Engineering, Database Systems, and Web Technologies.",
+    title: "Junior Full Stack Developer - eBOS Technologies",
+    desc: "Worked as Junior Full Stack Developer at eBOS Technologies in Nicosia, Cyprus (March 2024 - September 2024). Built web applications using C#, Microsoft SQL Server, HTML5, CSS3, and JavaScript.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "C# .NET API Development Certification",
-    desc: "Completed comprehensive .NET API Development course on Udemy, mastering C#, ASP.NET Core, Entity Framework, and RESTful API design.",
-    className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Python & C++ Programming Certifications",
-    desc: "Completed advanced programming courses in Python and C++ on Udemy, gaining expertise in data structures, algorithms, and software development best practices.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
   },
 ];
 
