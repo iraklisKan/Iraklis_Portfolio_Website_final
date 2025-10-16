@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Tech enthusiast with a passion for fullstack development.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently working with .NET and modern web technologies at eBOS",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,35 +72,81 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Friends Management App",
+    des: "A full-stack CRUD application built with Flask and React, featuring user authentication and RESTful API integration for managing friend connections.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    iconLists: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+    ],
+    link: "https://github.com/iraklisKan/python_react_chatapp",
+    liveLink: "#contact",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Python Real-Time Chat App",
+    des: "Real-time chat application with Socket.IO integration, enabling instant messaging and live communication between users.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    iconLists: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    ],
+    link: "https://github.com/iraklisKan/python_Chatapp",
+    liveLink: "https://python-chatapp-gjoe.onrender.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "MERN Stack Note-Taking App",
+    des: "Full-stack note-taking application built with MongoDB, Express.js, React, and Node.js featuring user authentication and CRUD operations.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    iconLists: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    ],
+    link: "https://github.com/iraklisKan/mernstack_Notetaking_app",
+    liveLink: "https://mernstack-notetaking-app-node.onrender.com/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Python Web App ToDo List",
+    des: "Interactive to-do list web application built with Python and Streamlit, featuring task management and user-friendly interface.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    iconLists: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "https://streamlit.io/images/brand/streamlit-mark-color.svg",
+    ],
+    link: "https://github.com/iraklisKan/python-todo-list",
+    liveLink: "https://irakliskan-python-todo-list-todolistweb-7mqa2v.streamlit.app/",
+  },
+  {
+    id: 5,
+    title: "Django Application Form System",
+    des: "Robust form handling system built with Django framework, implementing secure data validation and processing.",
+    img: "/p1.svg",
+    iconLists: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    ],
+    link: "https://github.com/iraklisKan/Simple-Application-Form-Using-Django-",
+    liveLink: "https://irakliskan.github.io/Simple-Application-Form-Using-Django-/",
+  },
+  {
+    id: 6,
+    title: "Email Daily News API",
+    des: "Automated email newsletter system with API integration for fetching and delivering daily news updates to subscribers.",
+    img: "/p2.svg",
+    iconLists: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "https://cdn.simpleicons.org/fastapi/009688",
+      "https://cdn.simpleicons.org/gmail/EA4335",
+    ],
+    link: "https://github.com/iraklisKan/Email-daily-news-with-Api-Python",
+    liveLink: "#contact",
   },
 ];
 
@@ -173,29 +219,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full Stack Web Developer - eBOS",
+    desc: "Currently working as a Full Stack Developer at eBOS in Nicosia, Cyprus. Building modern web applications using .NET, C#, HTML5, CSS3, and JavaScript.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Bachelor's Degree - Applied Informatics",
+    desc: "Pursuing Bachelor's degree in Applied Informatics at University of Macedonia, Thessaloniki. Focus on Software Engineering, Database Systems, and Web Technologies.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "C# .NET API Development Certification",
+    desc: "Completed comprehensive .NET API Development course on Udemy, mastering C#, ASP.NET Core, Entity Framework, and RESTful API design.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Python & C++ Programming Certifications",
+    desc: "Completed advanced programming courses in Python and C++ on Udemy, gaining expertise in data structures, algorithms, and software development best practices.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -213,5 +259,40 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
+  },
+];
+
+export const education = [
+  {
+    id: 1,
+    institution: "University of Macedonia",
+    degree: "Bachelor's Degree in Applied Informatics",
+    location: "Thessaloniki, Greece",
+    period: "2020 - Present",
+    description: "Comprehensive study of computer science fundamentals, software engineering, database systems, web technologies, and application development.",
+  },
+];
+
+export const certifications = [
+  {
+    id: 1,
+    title: "C++ Programming",
+    provider: "Udemy",
+    status: "Completed",
+    description: "Advanced C++ programming course covering data structures, algorithms, OOP, and modern C++ features.",
+  },
+  {
+    id: 2,
+    title: "C# .NET API Development",
+    provider: "Udemy",
+    status: "Completed",
+    description: "Comprehensive course on building RESTful APIs with ASP.NET Core, Entity Framework, and best practices.",
+  },
+  {
+    id: 3,
+    title: "Python Programming",
+    provider: "Udemy",
+    status: "Completed",
+    description: "Complete Python programming course from basics to advanced topics including Django and Flask frameworks.",
   },
 ];

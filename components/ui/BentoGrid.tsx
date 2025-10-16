@@ -1,8 +1,11 @@
-import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
+"use client";
 
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+import { useState, useEffect } from "react";
+import { IoCopyOutline } from "react-icons/io5";
+import dynamic from "next/dynamic";
+
+// Dynamically import Lottie to avoid SSR issues
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 import { cn } from "@/lib/utils";
 
@@ -52,22 +55,18 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["Python", "C++", "C#", "React.js", "TypeScript"];
+  const rightLists = ["HTML", "CSS", "JavaScript", "Node.js"];
 
   const [copied, setCopied] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "irakliskanbusiness@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -149,6 +148,7 @@ export const BentoGridItem = ({
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    style={{ animation: `moveDown 5s linear infinite` }}
                   >
                     {item}
                   </span>
@@ -162,6 +162,7 @@ export const BentoGridItem = ({
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    style={{ animation: `moveUp 5s linear infinite` }}
                   >
                     {item}
                   </span>
@@ -180,7 +181,14 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {isClient && (
+                  <Lottie
+                    animationData={animationData}
+                    loop={copied}
+                    autoplay={copied}
+                    style={{ height: 200, width: 400 }}
+                  />
+                )}
               </div>
 
               <MagicButton

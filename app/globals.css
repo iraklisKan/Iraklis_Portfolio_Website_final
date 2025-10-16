@@ -70,9 +70,11 @@
   * {
     @apply border-border !scroll-smooth;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   button {
     @apply active:outline-none;
   }
@@ -81,5 +83,25 @@
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

@@ -18,10 +18,7 @@ const RecentProjects = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
+            <PinContainer>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
@@ -65,11 +62,31 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                <div className="flex gap-3">
+                  {item.liveLink && (
+                    <a 
+                      href={item.liveLink} 
+                      target={item.liveLink.startsWith('#') ? '_self' : '_blank'}
+                      rel="noopener noreferrer"
+                      className="flex justify-center items-center"
+                    >
+                      <p className="flex lg:text-base md:text-xs text-sm text-purple">
+                        {item.liveLink.startsWith('#') ? 'Request Demo' : 'Live Demo'}
+                      </p>
+                      <FaLocationArrow className="ms-2" color="#CBACF9" size={12} />
+                    </a>
+                  )}
+                  <a 
+                    href={item.link} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center"
+                  >
+                    <p className="flex lg:text-base md:text-xs text-sm text-purple">
+                      GitHub
+                    </p>
+                    <FaLocationArrow className="ms-2" color="#CBACF9" size={12} />
+                  </a>
                 </div>
               </div>
             </PinContainer>
