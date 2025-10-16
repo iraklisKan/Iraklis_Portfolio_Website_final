@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently working with .NET and modern web technologies at eBOS",
+    title: "Currently working with Go, Docker, Kubernetes at AEON Payment Technologies",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -248,14 +248,14 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Engineer - AEON Payment Technologies LTD",
-    desc: "Currently working as a Software Engineer at AEON Payment Technologies LTD. Developing payment solutions using Go (Golang), Docker, Kubernetes, Oracle/SQL, and PostgreSQL.",
+    desc: "October 2024 - Present | Developing payment solutions using Go (Golang), Docker, Kubernetes, Oracle/SQL, and PostgreSQL. Working on scalable microservices architecture and containerized applications.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
     title: "Junior Full Stack Developer - eBOS Technologies",
-    desc: "Worked as Junior Full Stack Developer at eBOS Technologies in Nicosia, Cyprus (March 2024 - September 2024). Built web applications using C#, Microsoft SQL Server, HTML5, CSS3, and JavaScript.",
+    desc: "March 2024 - September 2024 | Built web applications using C#, Microsoft SQL Server, HTML5, CSS3, and JavaScript. Developed full-stack solutions and RESTful APIs in Nicosia, Cyprus.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
