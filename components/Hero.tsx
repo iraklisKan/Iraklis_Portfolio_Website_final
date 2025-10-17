@@ -1,5 +1,6 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { HiDocumentText } from "react-icons/hi2";
+import { FaLink } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -63,10 +64,17 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
-            <a href="#about">
+            <a href="#projects">
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a href="#contact">
+              <MagicButton
+                title="My Links"
+                icon={<FaLink />}
                 position="right"
               />
             </a>
