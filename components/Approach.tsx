@@ -15,9 +15,7 @@ const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="Strategic planning is key! I start by understanding the business goals, target audience, and desired features to create a solid roadmap for development."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -28,9 +26,7 @@ const Approach = () => {
         <Card
           title="Development & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Communication is key during development. I provide regular updates, share progress, and gather feedback to ensure the project stays on track and meets expectations."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -50,9 +46,7 @@ const Approach = () => {
         <Card
           title="Development & Launch"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="After rigorous testing and quality assurance, I ensure a smooth launch of the web application, providing ongoing support and maintenance to keep it running flawlessly."
         >
           <CanvasRevealEffect
             animationSpeed={3}
