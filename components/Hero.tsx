@@ -1,8 +1,10 @@
 import { FaLocationArrow } from "react-icons/fa6";
+import { HiDocumentText } from "react-icons/hi2";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { getImagePath } from "@/lib/utils";
 
 const Hero = () => {
   return (
@@ -60,13 +62,26 @@ const Hero = () => {
             Hi! I&apos;m Iraklis, a Fullstack Developer based in Cyprus.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a 
+              href={getImagePath("/IRAKLIS_CV_OCT.pdf")} 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <MagicButton
+                title="View My CV"
+                icon={<HiDocumentText />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
