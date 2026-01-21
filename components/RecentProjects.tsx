@@ -34,21 +34,60 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 
+                className="font-bold lg:text-2xl md:text-xl text-base overflow-hidden"
+                style={{
+                  display: "-webkit-box",
+                  WebkitLineClamp: 1,
+                  WebkitBoxOrient: "vertical" as const,
+                  transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+                }}
+                onMouseEnter={(e) => {
+                  const target = e.currentTarget;
+                  setTimeout(() => {
+                    if (target && target.matches(':hover')) {
+                      target.style.webkitLineClamp = "unset";
+                    }
+                  }, 500);
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.webkitLineClamp = "1";
+                }}
+              >
                 {item.title}
               </h1>
 
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
-                {item.des}
-              </p>
+              <div className="group/desc relative z-20">
+                <p
+                  className="lg:text-xl lg:font-normal font-light text-sm overflow-hidden relative z-20"
+                  style={{
+                    color: "#BEC1DD",
+                    margin: "1vh 0",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical" as const,
+                    transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+                    transitionDelay: "0s",
+                  }}
+                  onMouseEnter={(e) => {
+                    const target = e.currentTarget;
+                    setTimeout(() => {
+                      if (target && target.matches(':hover')) {
+                        target.style.webkitLineClamp = "unset";
+                        target.style.maxHeight = "12em";
+                      }
+                    }, 500);
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.webkitLineClamp = "2";
+                    e.currentTarget.style.maxHeight = "3.5em";
+                  }}
+                >
+                  {item.des}
+                </p>
+              </div>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
+              <div className="flex items-center justify-between mt-7 mb-3 relative z-10">
                 <div className="flex items-center">
                   {item.iconLists.map((icon, index) => (
                     <div
@@ -69,9 +108,9 @@ const RecentProjects = () => {
                       href={item.liveLink} 
                       target={item.liveLink.startsWith('#') ? '_self' : '_blank'}
                       rel="noopener noreferrer"
-                      className="flex justify-center items-center"
+                      className="flex justify-center items-center group/link"
                     >
-                      <p className="flex lg:text-base md:text-xs text-sm text-purple">
+                      <p className="flex lg:text-base md:text-xs text-sm text-purple relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-purple after:transition-all after:duration-300 group-hover/link:after:w-full">
                         {item.liveLink.startsWith('#') ? 'Request Demo' : 'Live Demo'}
                       </p>
                       <FaLocationArrow className="ms-2" color="#CBACF9" size={12} />
@@ -81,9 +120,9 @@ const RecentProjects = () => {
                     href={item.link} 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex justify-center items-center"
+                    className="flex justify-center items-center group/link"
                   >
-                    <p className="flex lg:text-base md:text-xs text-sm text-purple">
+                    <p className="flex lg:text-base md:text-xs text-sm text-purple relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-purple after:transition-all after:duration-300 group-hover/link:after:w-full">
                       GitHub
                     </p>
                     <FaLocationArrow className="ms-2" color="#CBACF9" size={12} />

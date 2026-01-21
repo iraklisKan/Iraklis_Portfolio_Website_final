@@ -86,22 +86,28 @@
   }
 }
 
-@keyframes moveUp {
+@keyframes scroll-up {
   0% {
     transform: translateY(0);
   }
-
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
 }
 
-@keyframes moveDown {
+@keyframes scroll-down {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
-
   100% {
     transform: translateY(0);
   }
+}
+
+.animate-scroll-up {
+  animation: scroll-up 15s linear infinite;
+}
+
+.animate-scroll-down {
+  animation: scroll-down 15s linear infinite;
 }

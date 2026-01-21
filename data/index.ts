@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently working with Go, Docker, Kubernetes at AEON Payment Technologies",
+    title: "Currently working with Go, Next.js, Docker, PostgreSQL and PL/SQL at AEON Payment Technologies",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -276,7 +276,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Engineer - AEON Payment Technologies LTD",
-    desc: "October 2025 - Present | Developing payment solutions using Go (Golang), Docker, Kubernetes, Oracle/SQL, and PostgreSQL. Working on scalable microservices architecture and containerized applications.",
+    desc: "October 2025 - Present | Developing payment solutions using Go (Golang), Next.js, Docker, Oracle/SQL, and PostgreSQL. Working on scalable microservices architecture and containerized applications.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
