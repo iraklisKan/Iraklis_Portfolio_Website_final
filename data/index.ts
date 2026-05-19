@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently working with Go, Next.js, Docker, PostgreSQL and PL/SQL at AEON Payment Technologies",
+    title: "Currently working with NestJS, React and PostgreSQL in a JavaScript ecosystem at Netmar Ltd",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -275,13 +275,20 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Software Engineer - AEON Payment Technologies LTD",
-    desc: "October 2025 - Present | Developing payment solutions using Go (Golang), Next.js, Docker, Oracle/SQL, and PostgreSQL. Working on scalable microservices architecture and containerized applications.",
+    title: "Fullstack Software Developer - Netmar Ltd",
+    desc: "March 2026 - Present | Building fullstack web applications using NestJS, React, and PostgreSQL within a JavaScript ecosystem. Designing scalable APIs and modern frontend experiences.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
+    title: "Software Engineer - AEON Payment Technologies LTD",
+    desc: "October 2025 - March 2026 | Developed payment solutions using Go (Golang), Next.js, Docker, Oracle/SQL, and PostgreSQL. Worked on scalable microservices architecture and containerized applications.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
     title: "Junior Full Stack Developer - eBOS Technologies",
     desc: "March 2025 - September 2025 | Built web applications using C#, Microsoft SQL Server, HTML5, CSS3, and JavaScript. Developed full-stack solutions and RESTful APIs in Nicosia, Cyprus.",
     className: "md:col-span-2",
