@@ -1,6 +1,8 @@
-import { FaLocationArrow } from "react-icons/fa6";
+"use client";
+
+import { motion } from "framer-motion";
+import { FaLocationArrow, FaLink } from "react-icons/fa6";
 import { HiDocumentText } from "react-icons/hi2";
-import { FaLink } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -9,12 +11,9 @@ import { getImagePath } from "@/lib/utils";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
-      {/**
-       *  UI: Spotlights
-       *  Link: https://ui.aceternity.com/components/spotlight
-       */}
-      <div>
+    <section className="pb-20 pt-36" aria-label="Introduction">
+      {/* Spotlights */}
+      <div aria-hidden="true">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
@@ -26,62 +25,64 @@ const Hero = () => {
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
-      {/**
-       *  UI: grid
-       *  change bg color to bg-black-100 and reduce grid color from
-       *  0.2 to 0.03
-       */}
+      {/* Grid background */}
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
-       absolute top-0 left-0 flex items-center justify-center"
+        aria-hidden="true"
+        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2] absolute top-0 left-0 flex items-center justify-center"
       >
-        {/* Radial gradient for the container to give a faded look */}
-        <div
-          // chnage the bg to bg-black-100, so it matches the bg color and will blend in
-          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-        />
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80"
+          >
             Creativity is intelligence having fun.
-          </p>
+          </motion.p>
 
-          {/**
-           *  Link: https://ui.aceternity.com/components/text-generate-effect
-           *
-           *  change md:text-6xl, add more responsive code
-           */}
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"
+          >
             Hi! I&apos;m Iraklis, a Fullstack Developer based in Cyprus.
-          </p>
+          </motion.p>
 
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
-            <a href="#projects">
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="flex flex-col md:flex-row gap-4 items-center justify-center"
+          >
+            <a href="#projects" aria-label="See my projects">
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}
                 position="right"
               />
             </a>
-            <a href="#contact">
+            <a href="#contact" aria-label="Open my links section">
               <MagicButton
                 title="My Links"
                 icon={<FaLink />}
                 position="right"
               />
             </a>
-            <a 
-              href={getImagePath("/IRAKLIS_CV_OCT.pdf")} 
-              target="_blank" 
+            <a
+              href={getImagePath("/IRAKLIS_CV_OCT.pdf")}
+              target="_blank"
               rel="noopener noreferrer"
+              aria-label="Download my CV (PDF, opens in a new tab)"
             >
               <MagicButton
                 title="View My CV"
@@ -89,10 +90,10 @@ const Hero = () => {
                 position="right"
               />
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

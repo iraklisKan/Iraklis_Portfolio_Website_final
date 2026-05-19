@@ -55,8 +55,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["Python", "C++", "C#", "React.js", "TypeScript","Nest.js", "Express.js"];
-  const rightLists = ["HTML", "CSS", "JavaScript", "Node.js", "PostgreSQL", "Docker", "MongoDB"];
+  const leftLists = ["TypeScript", "React.js", "Next.js", "NestJS", "Node.js", "Go", "Python"];
+  const rightLists = ["PostgreSQL", "MongoDB", "Docker", "Express.js", "C#", "HTML", "CSS"];
 
   const [copied, setCopied] = useState(false);
   const [isClient, setIsClient] = useState(false);
@@ -65,10 +65,20 @@ export const BentoGridItem = ({
     setIsClient(true);
   }, []);
 
-  const handleCopy = () => {
+  useEffect(() => {
+    if (!copied) return;
+    const timer = setTimeout(() => setCopied(false), 2500);
+    return () => clearTimeout(timer);
+  }, [copied]);
+
+  const handleCopy = async () => {
     const text = "irakliskanbusiness@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+    } catch {
+      setCopied(false);
+    }
   };
 
   return (
